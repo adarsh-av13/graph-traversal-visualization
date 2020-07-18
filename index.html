@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Traversal Visualisation</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <span class="header">Graph Traversal Visualization</span>
+    <div class="container">
+        <div class="column">
+            <button id="vertex-btn" class="btn" onclick="vertexMode()">Add Vertices</button>
+            <button id="edge-btn" class="btn" onclick="edgeMode()">Add Edges</button>
+            <button id="done-btn" class="btn" onclick="done()">Done</button>
+        </div>
+        <div class="grid">
+        </div>
+        <div class="column">
+            <span id="algo" class="traversal"></span>
+            <span id="order" class="traversal"></span>
+            <span id="traversal" class="traversal">Traversal Complete</span>
+            <div class="traversal-controller">
+                <div class="controller-input">
+                    <input id="start-vertex" name="start" type="number">
+                    <label for="start">Start Vertex</label>
+                </div>
+                <div class="controller-btns">
+                    <button id="bfs-btn" class="btn" onclick="bfs()">BFS</button>
+                    <button id="dfs-btn" class="btn" onclick="dfs()">DFS</button>
+                    <button id="reset-btn" class="btn" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
